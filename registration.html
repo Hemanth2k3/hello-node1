@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        .form {
+            margin-left: 25%;
+        }
+
+        label {
+            font-weight: bold;
+            display: inline-block;
+            width: 200px;
+        }
+
+        button {
+
+            font-size: 17px;
+            color: red;
+        }
+
+        div {
+            padding: 10px 0;
+        }
+
+        .container {
+            padding: 50px;
+            margin-left: 160px;
+            margin-right: 160px;
+            border-radius: 100px;
+            margin-top: 50px;
+            background-image: linear-gradient(to right, #221b1c,#8db9ca ,lightblue);
+        }
+    </style>
+</head>
+
+<body bgcolor="grey">
+    <div class="container">
+        <center>
+            <table border="3" height="100" width="500">
+                <tr>
+                    <td align="center">
+                        <h2> Student Registration Forms</h2>
+                    </td>
+                </tr>
+            </table>
+
+            <br>
+            <marquee direction="right" scrollamount="10" width="200">
+                <font face="bold" color="red"> Please fill it</font>
+            </marquee><br><br>
+        </center>
+        <form class="form">
+            <label name="name"> Name :<font color="#f72f4d" size="2"> *</font></label>
+            <input class="input" type="text" oninvalid="this.setCustomValidity('Please Enter valid Name')" required
+                name="name" placeholder="Enter Full Name " /><br><br>
+
+            </input>
+            <label name="fname">Father Name :&nbsp;&nbsp;&nbsp;</b> </label>
+            <input class="input" type="text" name="fname" /><br><br>
+
+            <label name="mname">Mother Name :&nbsp;&nbsp;</b> </label>
+            <input type="text" name="mname" /><br>
+            <br>
+            <label name="phn"> Phone number: <font color="#f72f4d" size="2"> *</font>&nbsp;</b></label>
+            <input type="text" required placeholder="9xxxxxxxxx" /><br> <br>
+            <label name="email">Email : <font color="#f72f4d" size="2"> *</font></label>
+            <input type="email" required placeholder="sample@gmail.com" name="email" /><br><br>
+            <label name="ps">Password <font color="#f72f4d" size="2"> *</font></label>
+            <input type="password" required name="ps" /><br><br>
+            <label name="cps"> Confirm Password</label>
+            <input type="password" name="cps" /><br><br>
+            <label name="gender"> Gender:</label>
+            <input name="gender" type="radio" value="1">Male
+            <input name="gender" type="radio" value="1">FeMale
+            <input name="gender" type="radio" value="1">Others&emsp;
+            </br></br>
+            <label name="dob" align="left"> Date of Birth:&emsp14;</b></label>
+            <input size="100 " type="date">
+            </br>
+            </br>
+            <label align="top ">Address:</label>
+            <textarea name="" id="" cols="50" rows="3" placeholder="street road area"></textarea>
+            </br></br>
+
+            <label name="bg">Blood Group:</label>
+            <select name="bg">
+                <option>select </option>
+                <option> O+</option>
+                <option> O-</option>
+                <option> A+</option>
+                <option> A-</option>
+                <option> AB+</option>
+                <option> AB-</option>
+                <option> B+</option>
+                <option> B-</option>
+            </select>
+            <br>
+            <br>
+            <label name="Department"> Department :</label>
+            <input name="Department" type="radio" value="1">CSE
+            <input name="Department" type="radio" value="1">ECE
+            <input name="Department" type="radio" value="1">Others
+            <br>
+            <br>
+            <label name="course">Course : </label>
+            <input name="Department" type="checkbox">C
+            <input name="Department" type="checkbox">C++
+            <input name="Department" type="checkbox">AI
+            <input name="Department" type="checkbox">M.L
+            <input name="Department" type="checkbox">Robotics
+            <input name="Department" type="checkbox">Java
+            <br>
+            <br>
+            <label name="pic"> Photo : </label>
+            <input type="file" name="pic"> <br> <br>
+            <button type="Submit"> Submit</button> &emsp14;&emsp14;&emsp14;
+            <button style="color:orangered" type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+
+</html>
