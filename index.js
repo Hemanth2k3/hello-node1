@@ -33,7 +33,7 @@ http
         response.write(projectContent);
         response.end();
         break;
-    case "/registration.html":
+    case "/registration":
         response.write(registrationcontent);
         response.end();
         break;
